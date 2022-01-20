@@ -1,0 +1,373 @@
+INFO :: root :: 2022-01-21 00:43:26,242 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:43:26,285 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:43:26,290 :: Started server process [7660]
+INFO :: uvicorn.error :: 2022-01-21 00:43:26,291 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:43:26,292 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:43:41,315 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-21 00:43:41,315 :: Added User Id is : [{'user_id': 6}]
+INFO :: root :: 2022-01-21 00:44:27,978 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-21 00:44:27,978 :: Added User Id is : [{'user_id': 7}]
+INFO :: root :: 2022-01-21 00:48:09,374 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:48:09,420 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:48:09,426 :: Started server process [7720]
+INFO :: uvicorn.error :: 2022-01-21 00:48:09,426 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:48:09,427 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:50:28,148 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:50:28,252 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:50:28,260 :: Started server process [10116]
+INFO :: uvicorn.error :: 2022-01-21 00:50:28,263 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:50:28,264 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:51:09,218 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:51:09,257 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:51:09,261 :: Started server process [984]
+INFO :: uvicorn.error :: 2022-01-21 00:51:09,261 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:51:09,262 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:52:19,284 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:52:19,326 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:52:19,331 :: Started server process [7572]
+INFO :: uvicorn.error :: 2022-01-21 00:52:19,332 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:52:19,332 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:53:57,776 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:53:57,776 :: Deleted Employee ID is : 3
+ERROR :: uvicorn.error :: 2022-01-21 00:53:57,779 :: Exception in ASGI application
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'builtin_function_or_method' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\applications.py", line 211, in __call__
+    await super().__call__(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'builtin_function_or_method' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO :: root :: 2022-01-21 00:54:22,706 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:54:22,706 :: Deleted Employee ID is : 3
+ERROR :: uvicorn.error :: 2022-01-21 00:54:22,709 :: Exception in ASGI application
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'builtin_function_or_method' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\applications.py", line 211, in __call__
+    await super().__call__(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'builtin_function_or_method' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO :: root :: 2022-01-21 00:55:31,987 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:55:31,987 :: Deleted Employee ID is : 3
+ERROR :: uvicorn.error :: 2022-01-21 00:55:31,991 :: Exception in ASGI application
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'builtin_function_or_method' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\applications.py", line 211, in __call__
+    await super().__call__(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'builtin_function_or_method' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO :: root :: 2022-01-21 00:55:43,720 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:55:43,721 :: Deleted Employee ID is : 4
+ERROR :: uvicorn.error :: 2022-01-21 00:55:43,723 :: Exception in ASGI application
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'builtin_function_or_method' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "e:\database\book_store_app\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\applications.py", line 211, in __call__
+    await super().__call__(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "e:\database\book_store_app\venv\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "e:\database\book_store_app\venv\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'builtin_function_or_method' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO :: root :: 2022-01-21 00:56:36,210 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:56:36,250 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:56:36,255 :: Started server process [6500]
+INFO :: uvicorn.error :: 2022-01-21 00:56:36,257 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:56:36,257 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:56:44,259 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:56:44,259 :: Deleted Employee ID is : 7
+INFO :: root :: 2022-01-21 00:58:27,567 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:58:27,661 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:58:27,666 :: Started server process [6452]
+INFO :: uvicorn.error :: 2022-01-21 00:58:27,666 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:58:27,667 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:58:45,939 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 00:58:45,978 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 00:58:45,982 :: Started server process [8424]
+INFO :: uvicorn.error :: 2022-01-21 00:58:45,983 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 00:58:45,983 :: Application startup complete.
+INFO :: root :: 2022-01-21 00:59:16,182 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:59:16,183 :: Deleted Employee ID is : 7
+INFO :: root :: 2022-01-21 00:59:24,025 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:59:24,025 :: Deleted Employee ID is : 7
+INFO :: root :: 2022-01-21 00:59:35,056 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-21 00:59:35,057 :: Deleted Employee ID is : 7
+INFO :: root :: 2022-01-21 01:00:41,948 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:00:42,117 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:00:42,124 :: Started server process [960]
+INFO :: uvicorn.error :: 2022-01-21 01:00:42,143 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:00:42,144 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:05:56,581 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:05:56,627 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:05:56,634 :: Started server process [7748]
+INFO :: uvicorn.error :: 2022-01-21 01:05:56,640 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:05:56,642 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:10:15,812 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:10:15,850 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:10:15,855 :: Started server process [5688]
+INFO :: uvicorn.error :: 2022-01-21 01:10:15,856 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:10:15,857 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:12:07,259 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:12:09,345 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:12:09,350 :: Started server process [6428]
+INFO :: uvicorn.error :: 2022-01-21 01:12:09,351 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:12:09,352 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:14:16,686 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:14:16,725 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:14:16,729 :: Started server process [1028]
+INFO :: uvicorn.error :: 2022-01-21 01:14:16,730 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:14:16,730 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:18:36,628 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:18:36,667 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:18:36,674 :: Started server process [6000]
+INFO :: uvicorn.error :: 2022-01-21 01:18:36,675 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:18:36,675 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:38:30,111 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:38:30,517 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:38:30,523 :: Started server process [9592]
+INFO :: uvicorn.error :: 2022-01-21 01:38:30,524 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:38:30,524 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:38:49,203 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:38:49,247 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:38:49,255 :: Started server process [5560]
+INFO :: uvicorn.error :: 2022-01-21 01:38:49,255 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:38:49,256 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:39:02,123 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:39:02,192 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:39:02,197 :: Started server process [3860]
+INFO :: uvicorn.error :: 2022-01-21 01:39:02,197 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:39:02,198 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:39:24,741 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:39:24,777 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:39:24,783 :: Started server process [5236]
+INFO :: uvicorn.error :: 2022-01-21 01:39:24,783 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:39:24,784 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:42:14,097 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:42:14,203 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:42:14,211 :: Started server process [7476]
+INFO :: uvicorn.error :: 2022-01-21 01:42:14,211 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:42:14,212 :: Application startup complete.
+ERROR :: root :: 2022-01-21 01:43:04,526 :: Error: Commands out of sync; you can't run this command now
+INFO :: root :: 2022-01-21 01:44:17,052 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:44:17,086 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:44:17,093 :: Started server process [700]
+INFO :: uvicorn.error :: 2022-01-21 01:44:17,094 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:44:17,094 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:45:56,566 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:45:56,599 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:45:56,605 :: Started server process [7040]
+INFO :: uvicorn.error :: 2022-01-21 01:45:56,606 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:45:56,606 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:46:42,359 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-21 01:46:42,359 :: Verified User Id is : [{'user_id': 1}]
+INFO :: root :: 2022-01-21 01:47:03,434 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-21 01:47:03,435 :: Verified User Id is : []
+INFO :: root :: 2022-01-21 01:47:25,096 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-21 01:47:25,097 :: Verified User Id is : []
+INFO :: root :: 2022-01-21 01:50:34,456 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:50:34,494 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:50:34,503 :: Started server process [8656]
+INFO :: uvicorn.error :: 2022-01-21 01:50:34,504 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:50:34,505 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:52:46,178 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:52:46,211 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:52:46,218 :: Started server process [5436]
+INFO :: uvicorn.error :: 2022-01-21 01:52:46,219 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:52:46,220 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:52:47,276 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:52:47,312 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:52:47,319 :: Started server process [272]
+INFO :: uvicorn.error :: 2022-01-21 01:52:47,319 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:52:47,320 :: Application startup complete.
+ERROR :: root :: 2022-01-21 01:52:57,519 :: Error: ('Incorrect User Details', 'error: id not found')
+INFO :: root :: 2022-01-21 01:55:06,960 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:55:06,996 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:55:07,001 :: Started server process [6880]
+INFO :: uvicorn.error :: 2022-01-21 01:55:07,001 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:55:07,002 :: Application startup complete.
+ERROR :: root :: 2022-01-21 01:55:12,310 :: Error: {'error: id not found', 'Incorrect User Details'}
+INFO :: root :: 2022-01-21 01:55:33,334 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:55:33,370 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:55:33,376 :: Started server process [3824]
+INFO :: uvicorn.error :: 2022-01-21 01:55:33,376 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:55:33,377 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:56:22,271 :: Successfully Verified User Details
+DEBUG :: root :: 2022-01-21 01:56:22,271 :: Verified User Id is : [{'user_id': 1}]
+INFO :: root :: 2022-01-21 01:57:18,851 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 01:57:18,894 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 01:57:18,900 :: Started server process [9220]
+INFO :: uvicorn.error :: 2022-01-21 01:57:18,901 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 01:57:18,902 :: Application startup complete.
+INFO :: root :: 2022-01-21 01:58:20,123 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-21 01:58:20,124 :: Added User Id is : [{'user_id': 8}]
+INFO :: root :: 2022-01-21 02:07:34,712 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 02:07:34,754 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 02:07:34,762 :: Started server process [8948]
+INFO :: uvicorn.error :: 2022-01-21 02:07:34,762 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 02:07:34,763 :: Application startup complete.
+ERROR :: root :: 2022-01-21 02:08:00,653 :: Error: ('Incorrect User Id', 'error: id not found')
+ERROR :: root :: 2022-01-21 02:08:21,821 :: Error: ('Incorrect User Id', 'error: id not found')
+INFO :: root :: 2022-01-21 02:10:28,103 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 02:10:28,725 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 02:10:28,733 :: Started server process [8484]
+INFO :: uvicorn.error :: 2022-01-21 02:10:28,734 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 02:10:28,735 :: Application startup complete.
+INFO :: root :: 2022-01-21 02:31:08,084 :: Trying to establish the database connection
+INFO :: root :: 2022-01-21 02:31:12,166 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-21 02:31:12,172 :: Started server process [9628]
+INFO :: uvicorn.error :: 2022-01-21 02:31:12,172 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-21 02:31:12,173 :: Application startup complete.
