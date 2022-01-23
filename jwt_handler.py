@@ -13,7 +13,7 @@ class JwtHandler:
     def encode_token(id):
         """
             desc: this function will encode the payload into a token
-            param: id: it is an user id
+            param: id: it is a user id
             return: token id
         """
         payload = {"user_id": id, "expiry": datetime.timedelta(days=1)}
