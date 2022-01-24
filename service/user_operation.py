@@ -66,17 +66,31 @@ class UserOperation:
         else:
             return user_id
 
+    def verify_new_user(self, user_id):
+        """
+        desc: verify new registered user
+        :param user_id: user id
+        """
+        query = "update user_details set is_verified = true where user_id = %d" % user_id
+        self.cursor.execute(query)
+        self.connection.commit()
+        query = "select is_verified from user_details where user_id = %d" % user_id
+        self.cursor.execute(query)
+        verified = [i for i in self.cursor]
+        verified = verified[0]["is_verified"]
+        if verified == 0:
+            return user_id
+        else:
+            raise Exception("User already verified")
+
     def delete_user(self, user_id):
         """
             desc: delete user from database
-            param: id
-            return: deleted user id
+            param: user id
         """
-        query = "select user_id from user_details where user_id = %d" % user_id
         query = "delete from user_details where user_id = %d" % user_id
         self.cursor.execute(query)
         self.connection.commit()
-        return user_id
 
     def update_user_detail(self, user_id, update_param, update):
         """
@@ -89,3 +103,4 @@ class UserOperation:
         self.connection.commit()
         updated_detail = self.get_single_user_detail(user_id)
         return updated_detail
+

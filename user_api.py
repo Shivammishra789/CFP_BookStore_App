@@ -24,8 +24,8 @@ def retrieve_all_user_details():
     try:
         user_details = operation.get_all_user_details()
         logging.info("Successfully Fetched All User Details")
-        logging.debug(f"Employee Details are : {user_details}")
-        return {"status": 200, "message": "Employee Details fetched successfully", "data": user_details}
+        logging.debug(f"User Details are : {user_details}")
+        return {"status": 200, "message": "User Details fetched successfully", "data": user_details}
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}
@@ -41,7 +41,7 @@ def single_user_data(user_id):
         user_detail = operation.get_single_user_detail(user_id)
         logging.info("Successfully Fetched User Details")
         logging.debug(f"User Details are : {user_detail}")
-        return {"status": 200, "message": "Employee Details fetched successfully", "data": user_detail}
+        return {"status": 200, "message": "User Details fetched successfully", "data": user_detail}
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"{error}"}
@@ -61,6 +61,22 @@ async def register_user(user: UserDetails):
         token_id = JwtHandler.encode_token(user_id)
         await send_email_async('USER VERIFICATION', user.email_id, token_id)
         return {"status": 200, "message": "User Details added successfully", "token": token_id}
+    except Exception as error:
+        logging.error(f"Error: {error}")
+        return {"status": 500, "message": f"Error : {error}"}
+
+
+@route.get("/verification")
+def verify_registered_user(token_id: str):
+    """
+    desc: method to verify registered user
+    :param token_id: generated while registering user
+    :return: deleted user id in SMD format
+    """
+    try:
+        user_id = JwtHandler.decode_token(token_id)
+        verified_user_id = operation.verify_new_user(user_id)
+        return {"status": 200, "message": f"User with Id {verified_user_id} Verified  successfully"}
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}
@@ -92,11 +108,11 @@ def delete_user(id:int):
         return: deleted user id in SMD format
     """
     try:
-        deleted_id = operation.delete_user(id)
+        operation.delete_user(id)
         logging.info("Successfully Deleted The User Details")
-        logging.debug(f"Deleted Employee ID is : {deleted_id}")
+        logging.debug(f"Deleted Employee ID is : {id}")
         return {"status": 200, "message": "Successfully Deleted The User Details",
-                "data": f"Deleted user Id is {deleted_id}"}
+                "data": f"Deleted user Id is {id}"}
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}

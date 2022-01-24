@@ -4,6 +4,8 @@
 @desc: Contains methods to encode and decode token
 '''
 import datetime
+import time
+
 import jwt
 from pydantic.schema import timedelta
 
@@ -20,7 +22,7 @@ class JwtHandler:
         key = 'users@678$registered9090';
         # expiry_time = datetime.datetime + timedelta(days=2)
         # token = jwt.encode({"user_id": user_id, "exp": expiry_time}, key=key, algorithm='HS512')
-        payload = {"user_id": id}
+        payload = {"user_id": id, "expires": time.time() + 60}
         token_id = jwt.encode(payload, key)
         return token_id
 
@@ -32,4 +34,6 @@ class JwtHandler:
             return: decoded user id
         """
         payload = jwt.decode(token_id, "users@678$registered9090", algorithms=["HS256"])
-        return payload.get('user_id')
+        user_dict = payload.get('user_id')
+        return user_dict[0]["user_id"]
+

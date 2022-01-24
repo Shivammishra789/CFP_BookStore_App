@@ -6,7 +6,7 @@
 from logger import logging
 from fastapi import APIRouter
 from model.books_model import Book
-from service.books_operation import BooksOperation
+from service.book_operation import BooksOperation
 
 route = APIRouter(prefix="/books", tags=["BOOKS"])
 book_operation = BooksOperation()
@@ -19,11 +19,11 @@ def get_all_books_details():
     return: book details
     """
     try:
-        result = book_operation.show_all_books()
+        result = book_operation.show_all_books_data()
         logging.info("Successfully retrieved all books Details ")
         return {"status": 200, "message": "Successfully retrieved  all books Details", "data": result}
     except Exception as error:
-        logging.error(f"error caught :{error}")
+        logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}
 
 
@@ -35,11 +35,11 @@ def get_book_details_by_id(book_id: int):
     return: book details in SMD format
     """
     try:
-        result = book_operation.show_book_data(book_id)
+        result = book_operation.show_single_book_data(book_id)
         logging.info("Successfully retrieved  book Details")
         return {"status": 200, "message": "Successfully retrieved  book Details", "data": result}
     except Exception as error:
-        logging.error(f"error caught :{error}")
+        logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}
 
 
@@ -51,7 +51,7 @@ def add_book(book: Book):
     return: book inserted details
     """
     try:
-        result = book_operation.add_book_to_db(book.id, book.author, book.title, book.image, book.quantity, book.price,book.description)
+        result = book_operation.add_single_book(book.id, book.author, book.title, book.image, book.quantity, book.price,book.description)
         logging.info("Successfully added one book Details")
         return {"status": 200, "message": "Successfully added The book Details","data": result}
     except Exception as error:
@@ -60,18 +60,19 @@ def add_book(book: Book):
 
 
 @route.put("/")
-def update_book(book_id: int, update_param: str, update: str):
+def update_book(book_id: int, book: Book):
     """
     desc: created api to update id, author, title, image, quantity, price, description of book to the database
     param: book id and book model
     return: updated book details in SMD format
     """
     try:
-        result = book_operation.update_book_detail()
+        result = book_operation.update_book(book_id, book.id, book.author, book.title, book.image,
+                                            book.quantity, book.price,book.description)
         logging.info(f"updated the details with book id {book_id} ")
         return {"status": 200, "message": "Successfully updated the book Details", "data ": result}
     except Exception as error:
-        logging.error(f"error caught :{error}")
+        logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}
 
 
@@ -80,13 +81,13 @@ def delete_book_by_id(book_id: int):
     """
     desc: created api to delete one book from the database
     param: book_id as path parameter
-    return: deleted book details or error
+    return: deleted book id in SMD format
     """
     try:
         book_operation.delete_book(book_id)
-        logging.info(f"deleted book by using book_id {book_id}")
+        logging.info(f"deleted book by with book_id {book_id}")
         return {"status": 200, "message": "Successfully deleted one book Details",
                 "data": f"deleted book id = {book_id}"}
     except Exception as error:
-        logging.error(f"error caught :{error}")
+        logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}

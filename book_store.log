@@ -909,3 +909,548 @@ INFO :: uvicorn.error :: 2022-01-24 14:09:14,655 :: Application startup complete
 INFO :: root :: 2022-01-24 14:10:49,307 :: Successfully added one book Details
 INFO :: root :: 2022-01-24 14:11:07,632 :: Successfully retrieved all books Details 
 INFO :: root :: 2022-01-24 14:11:36,099 :: Successfully retrieved  book Details
+INFO :: root :: 2022-01-24 14:23:58,203 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 14:23:59,977 :: Database Connection is Established
+INFO :: root :: 2022-01-24 14:24:00,254 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 14:24:00,277 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 14:24:00,384 :: Started server process [2820]
+INFO :: uvicorn.error :: 2022-01-24 14:24:00,385 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 14:24:00,386 :: Application startup complete.
+INFO :: root :: 2022-01-24 14:24:49,590 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 14:24:49,590 :: Added User Id is : [{'user_id': 14}]
+INFO :: root :: 2022-01-24 14:30:34,248 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 14:30:36,114 :: Database Connection is Established
+INFO :: root :: 2022-01-24 14:30:36,734 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 14:30:36,756 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 14:30:36,767 :: Started server process [4580]
+INFO :: uvicorn.error :: 2022-01-24 14:30:36,768 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 14:30:36,769 :: Application startup complete.
+INFO :: root :: 2022-01-24 14:30:54,657 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 14:30:54,657 :: Added User Id is : [{'user_id': 14}, {'user_id': 15}]
+INFO :: root :: 2022-01-24 14:31:33,296 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 14:31:33,296 :: Added User Id is : [{'user_id': 2}, {'user_id': 3}, {'user_id': 4}, {'user_id': 5}, {'user_id': 6}, {'user_id': 7}, {'user_id': 8}, {'user_id': 9}, {'user_id': 10}, {'user_id': 11}, {'user_id': 12}, {'user_id': 13}, {'user_id': 16}]
+INFO :: root :: 2022-01-24 14:33:17,033 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 14:33:17,413 :: Database Connection is Established
+INFO :: root :: 2022-01-24 14:33:17,483 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 14:33:17,504 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 14:33:17,514 :: Started server process [616]
+INFO :: uvicorn.error :: 2022-01-24 14:33:17,514 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 14:33:17,515 :: Application startup complete.
+INFO :: root :: 2022-01-24 15:26:10,340 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:26:11,204 :: Database Connection is Established
+INFO :: root :: 2022-01-24 15:26:11,297 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:26:11,320 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 15:26:11,332 :: Started server process [4572]
+INFO :: uvicorn.error :: 2022-01-24 15:26:11,332 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 15:26:11,333 :: Application startup complete.
+INFO :: root :: 2022-01-24 15:53:22,909 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:53:29,064 :: Database Connection is Established
+INFO :: root :: 2022-01-24 15:53:29,291 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:53:29,311 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 15:53:29,459 :: Started server process [7428]
+INFO :: uvicorn.error :: 2022-01-24 15:53:29,460 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 15:53:29,469 :: Application startup complete.
+INFO :: root :: 2022-01-24 15:54:01,174 :: Successfully Fetched All User Details
+DEBUG :: root :: 2022-01-24 15:54:01,175 :: Employee Details are : [{'user_id': 1, 'email_id': 'hishivammishra@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}, {'user_id': 2, 'email_id': 'shivammishra7789@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}, {'user_id': 3, 'email_id': 'shivammishra7789@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}, {'user_id': 4, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 5, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 6, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 7, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 8, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 9, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 10, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 11, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 12, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 13, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 14, 'email_id': 'dibyeshmishra207@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 15, 'email_id': 'dibyeshmishra207@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 16, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}]
+INFO :: root :: 2022-01-24 15:54:20,093 :: Successfully Fetched User Details
+DEBUG :: root :: 2022-01-24 15:54:20,093 :: User Details are : [{'user_id': 1, 'email_id': 'hishivammishra@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}]
+INFO :: root :: 2022-01-24 15:55:22,021 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:55:22,314 :: Database Connection is Established
+INFO :: root :: 2022-01-24 15:55:22,325 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:55:22,343 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 15:55:22,352 :: Started server process [832]
+INFO :: uvicorn.error :: 2022-01-24 15:55:22,352 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 15:55:22,353 :: Application startup complete.
+INFO :: root :: 2022-01-24 15:55:50,383 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:55:50,421 :: Database Connection is Established
+INFO :: root :: 2022-01-24 15:55:50,434 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 15:55:50,459 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 15:55:50,470 :: Started server process [7176]
+INFO :: uvicorn.error :: 2022-01-24 15:55:50,471 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 15:55:50,471 :: Application startup complete.
+INFO :: root :: 2022-01-24 15:56:14,039 :: Successfully Fetched All User Details
+DEBUG :: root :: 2022-01-24 15:56:14,039 :: User Details are : [{'user_id': 1, 'email_id': 'hishivammishra@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}, {'user_id': 2, 'email_id': 'shivammishra7789@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}, {'user_id': 3, 'email_id': 'shivammishra7789@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}, {'user_id': 4, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 5, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 6, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 7, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 8, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 9, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 10, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 11, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 12, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 13, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 14, 'email_id': 'dibyeshmishra207@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 15, 'email_id': 'dibyeshmishra207@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}, {'user_id': 16, 'email_id': 'shivammishra7789@gmail.com', 'password': 'string', 'full_name': 'string', 'mobile_no': 'string', 'is_verified': 0}]
+INFO :: root :: 2022-01-24 15:56:31,102 :: Successfully Fetched User Details
+DEBUG :: root :: 2022-01-24 15:56:31,103 :: User Details are : [{'user_id': 2, 'email_id': 'shivammishra7789@gmail.com', 'password': 'SFdsfsd@dsf', 'full_name': 'Shivam', 'mobile_no': '8458212055', 'is_verified': 0}]
+INFO :: root :: 2022-01-24 15:58:23,655 :: Successfully Deleted The User Details
+DEBUG :: root :: 2022-01-24 15:58:23,655 :: Deleted Employee ID is : 1
+INFO :: root :: 2022-01-24 15:59:12,963 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 15:59:12,964 :: Added User Id is : [{'user_id': 2}, {'user_id': 3}, {'user_id': 4}, {'user_id': 5}, {'user_id': 6}, {'user_id': 7}, {'user_id': 8}, {'user_id': 9}, {'user_id': 10}, {'user_id': 11}, {'user_id': 12}, {'user_id': 13}, {'user_id': 16}, {'user_id': 17}]
+INFO :: root :: 2022-01-24 16:01:18,504 :: Successfully Verified User Details
+DEBUG :: root :: 2022-01-24 16:01:18,505 :: Verified User Id is : [{'user_id': 4}, {'user_id': 5}, {'user_id': 6}, {'user_id': 7}, {'user_id': 8}, {'user_id': 9}, {'user_id': 10}, {'user_id': 11}, {'user_id': 12}, {'user_id': 13}, {'user_id': 16}, {'user_id': 17}]
+INFO :: root :: 2022-01-24 16:02:05,007 :: Successfully retrieved all books Details 
+INFO :: root :: 2022-01-24 16:02:25,381 :: Successfully retrieved  book Details
+ERROR :: root :: 2022-01-24 16:02:37,192 :: Error :this book id is not present in the database
+ERROR :: root :: 2022-01-24 16:04:08,951 :: Error :'BooksOperation' object has no attribute 'my_cursor'
+INFO :: root :: 2022-01-24 16:05:11,241 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:05:13,134 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:05:13,462 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:05:13,495 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:05:13,508 :: Started server process [6476]
+INFO :: uvicorn.error :: 2022-01-24 16:05:13,509 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:05:13,510 :: Application startup complete.
+ERROR :: root :: 2022-01-24 16:05:15,119 :: Error :'BooksOperation' object has no attribute 'show_book_data'
+INFO :: root :: 2022-01-24 16:06:24,332 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:06:24,366 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:06:24,380 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:06:24,403 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:06:24,415 :: Started server process [7936]
+INFO :: uvicorn.error :: 2022-01-24 16:06:24,415 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:06:24,416 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:06:33,682 :: updated the details with book id 100 
+INFO :: root :: 2022-01-24 16:07:45,414 :: Successfully added one book Details
+ERROR :: root :: 2022-01-24 16:08:06,109 :: Error :'BooksOperation' object has no attribute 'show_book_data'
+INFO :: root :: 2022-01-24 16:08:27,155 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:08:27,187 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:08:27,216 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:08:27,233 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:08:27,241 :: Started server process [7428]
+INFO :: uvicorn.error :: 2022-01-24 16:08:27,242 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:08:27,243 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:08:32,441 :: deleted book by with book_id 100
+INFO :: root :: 2022-01-24 16:18:00,484 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:18:00,520 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:18:00,530 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:18:00,549 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:18:00,558 :: Started server process [8148]
+INFO :: uvicorn.error :: 2022-01-24 16:18:00,559 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:18:00,559 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:19:08,526 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:19:08,557 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:19:08,588 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:19:08,625 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:19:08,643 :: Started server process [3344]
+INFO :: uvicorn.error :: 2022-01-24 16:19:08,644 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:19:08,645 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:42:10,792 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:42:17,463 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:42:17,602 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:42:17,669 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:42:17,682 :: Started server process [6432]
+INFO :: uvicorn.error :: 2022-01-24 16:42:17,746 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:42:17,889 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:43:20,286 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:43:20,327 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:43:20,357 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:43:20,377 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:43:20,389 :: Started server process [3140]
+INFO :: uvicorn.error :: 2022-01-24 16:43:20,389 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:43:20,390 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:46:42,673 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:46:42,704 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:46:42,713 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:46:42,732 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:46:42,740 :: Started server process [8816]
+INFO :: uvicorn.error :: 2022-01-24 16:46:42,741 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:46:42,742 :: Application startup complete.
+INFO :: root :: 2022-01-24 16:48:29,537 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 16:48:29,537 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 16:49:04,412 :: Error: %d format: a number is required, not list
+INFO :: root :: 2022-01-24 16:53:06,303 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:53:06,749 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:53:06,877 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:53:06,898 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:53:06,908 :: Started server process [6180]
+INFO :: uvicorn.error :: 2022-01-24 16:53:06,909 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:53:06,910 :: Application startup complete.
+ERROR :: root :: 2022-01-24 16:53:21,080 :: Error: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1
+INFO :: root :: 2022-01-24 16:54:42,049 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:54:42,082 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:54:42,123 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:54:42,142 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:54:42,152 :: Started server process [4004]
+INFO :: uvicorn.error :: 2022-01-24 16:54:42,153 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:54:42,154 :: Application startup complete.
+ERROR :: root :: 2022-01-24 16:54:45,314 :: Error: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1
+INFO :: root :: 2022-01-24 16:56:21,958 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:56:21,990 :: Database Connection is Established
+INFO :: root :: 2022-01-24 16:56:22,000 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 16:56:22,018 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 16:56:22,028 :: Started server process [8892]
+INFO :: uvicorn.error :: 2022-01-24 16:56:22,029 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 16:56:22,030 :: Application startup complete.
+ERROR :: root :: 2022-01-24 16:56:25,460 :: Error: %d format: a number is required, not list
+INFO :: root :: 2022-01-24 17:04:47,034 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:04:47,318 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:04:59,108 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:04:59,150 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:04:59,212 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:04:59,233 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:04:59,247 :: Started server process [920]
+INFO :: uvicorn.error :: 2022-01-24 17:04:59,248 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:04:59,249 :: Application startup complete.
+ERROR :: root :: 2022-01-24 17:05:09,036 :: Error: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1
+INFO :: root :: 2022-01-24 17:07:00,964 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:07:01,020 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:07:01,173 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:07:01,242 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:07:01,254 :: Started server process [7592]
+INFO :: uvicorn.error :: 2022-01-24 17:07:01,254 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:07:01,255 :: Application startup complete.
+INFO :: root :: 2022-01-24 17:07:45,305 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:07:45,347 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:07:45,361 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:07:45,386 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:07:45,397 :: Started server process [8880]
+INFO :: uvicorn.error :: 2022-01-24 17:07:45,398 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:07:45,398 :: Application startup complete.
+ERROR :: root :: 2022-01-24 17:07:46,418 :: Error: %d format: a number is required, not list
+ERROR :: root :: 2022-01-24 17:08:05,603 :: Error: %d format: a number is required, not list
+INFO :: root :: 2022-01-24 17:08:34,818 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:08:34,858 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:08:34,898 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:08:34,915 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:08:34,923 :: Started server process [1148]
+INFO :: uvicorn.error :: 2022-01-24 17:08:34,924 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:08:34,924 :: Application startup complete.
+ERROR :: root :: 2022-01-24 17:08:50,166 :: Error: %d format: a number is required, not list
+INFO :: root :: 2022-01-24 17:11:58,051 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:11:58,087 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:12:19,902 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:12:19,953 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:17:38,721 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:17:40,095 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:17:40,137 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:17:40,155 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:17:40,201 :: Started server process [8820]
+INFO :: uvicorn.error :: 2022-01-24 17:17:40,201 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:17:40,202 :: Application startup complete.
+INFO :: root :: 2022-01-24 17:17:47,614 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 17:17:47,614 :: Added User Id is : [{'user_id': 2}]
+ERROR :: root :: 2022-01-24 17:18:16,182 :: Error: %d format: a number is required, not list
+INFO :: root :: 2022-01-24 17:22:03,434 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:22:03,965 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:22:04,068 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:22:04,090 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:22:04,102 :: Started server process [7744]
+INFO :: uvicorn.error :: 2022-01-24 17:22:04,103 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:22:04,104 :: Application startup complete.
+INFO :: uvicorn.error :: 2022-01-24 17:22:08,311 :: Shutting down
+INFO :: uvicorn.error :: 2022-01-24 17:22:08,396 :: Waiting for application shutdown.
+INFO :: uvicorn.error :: 2022-01-24 17:22:08,396 :: Application shutdown complete.
+INFO :: uvicorn.error :: 2022-01-24 17:22:08,397 :: Finished server process [7744]
+INFO :: root :: 2022-01-24 17:25:54,683 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:25:54,727 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:25:54,740 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:25:54,761 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:25:54,772 :: Started server process [8600]
+INFO :: uvicorn.error :: 2022-01-24 17:25:54,772 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:25:54,773 :: Application startup complete.
+ERROR :: root :: 2022-01-24 17:25:58,722 :: Error: %d format: a number is required, not list
+INFO :: root :: 2022-01-24 17:26:07,882 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:26:07,920 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:26:07,999 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:26:08,032 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:26:08,041 :: Started server process [8344]
+INFO :: uvicorn.error :: 2022-01-24 17:26:08,041 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:26:08,042 :: Application startup complete.
+INFO :: root :: 2022-01-24 17:26:40,627 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:26:40,670 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:26:40,684 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:26:40,706 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:26:40,719 :: Started server process [2704]
+INFO :: uvicorn.error :: 2022-01-24 17:26:40,720 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:26:40,721 :: Application startup complete.
+ERROR :: root :: 2022-01-24 17:27:33,744 :: Error: Invalid header string: 'utf-8' codec can't decode byte 0x97 in position 2: invalid start byte
+ERROR :: root :: 2022-01-24 17:28:07,386 :: Error: Invalid header string: 'utf-8' codec can't decode byte 0x82 in position 1: invalid start byte
+INFO :: root :: 2022-01-24 17:43:33,354 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:43:35,624 :: Database Connection is Established
+INFO :: root :: 2022-01-24 17:43:35,688 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 17:43:35,712 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 17:43:35,885 :: Started server process [2476]
+INFO :: uvicorn.error :: 2022-01-24 17:43:35,887 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 17:43:35,896 :: Application startup complete.
+INFO :: root :: 2022-01-24 17:46:21,539 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 17:46:21,540 :: Added User Id is : [{'user_id': 1}]
+INFO :: root :: 2022-01-24 18:10:40,374 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:10:42,198 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:10:42,321 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:10:42,341 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:10:42,354 :: Started server process [7592]
+INFO :: uvicorn.error :: 2022-01-24 18:10:42,355 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:10:42,357 :: Application startup complete.
+INFO :: root :: 2022-01-24 18:14:21,902 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:14:21,937 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:14:21,947 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:14:21,965 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:14:21,976 :: Started server process [8716]
+INFO :: uvicorn.error :: 2022-01-24 18:14:21,976 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:14:21,977 :: Application startup complete.
+INFO :: root :: 2022-01-24 18:14:38,615 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:14:38,649 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:14:38,721 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:14:38,740 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:14:38,749 :: Started server process [5840]
+INFO :: uvicorn.error :: 2022-01-24 18:14:38,750 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:14:38,750 :: Application startup complete.
+INFO :: root :: 2022-01-24 18:16:41,660 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:16:41,705 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:16:41,719 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:16:41,743 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:16:41,756 :: Started server process [7840]
+INFO :: uvicorn.error :: 2022-01-24 18:16:41,757 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:16:41,758 :: Application startup complete.
+INFO :: root :: 2022-01-24 18:17:09,325 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 18:17:09,325 :: Added User Id is : [{'user_id': 2}]
+INFO :: root :: 2022-01-24 18:20:19,783 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:20:19,813 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:20:19,824 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:20:19,843 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:20:19,852 :: Started server process [4864]
+INFO :: uvicorn.error :: 2022-01-24 18:20:19,853 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:20:19,853 :: Application startup complete.
+ERROR :: root :: 2022-01-24 18:20:27,463 :: Error: Signature verification failed
+INFO :: root :: 2022-01-24 18:28:12,609 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:28:12,663 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:28:12,681 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:28:12,709 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:28:12,721 :: Started server process [652]
+INFO :: uvicorn.error :: 2022-01-24 18:28:12,722 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:28:12,722 :: Application startup complete.
+INFO :: root :: 2022-01-24 18:42:31,441 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:42:41,412 :: Database Connection is Established
+INFO :: root :: 2022-01-24 18:42:41,520 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 18:42:41,543 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 18:42:41,762 :: Started server process [5076]
+INFO :: uvicorn.error :: 2022-01-24 18:42:41,762 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 18:42:41,795 :: Application startup complete.
+INFO :: root :: 2022-01-24 20:17:49,533 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 20:18:04,379 :: Database Connection is Established
+INFO :: root :: 2022-01-24 20:18:04,498 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 20:18:04,602 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 20:18:04,661 :: Started server process [4624]
+INFO :: uvicorn.error :: 2022-01-24 20:18:04,661 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 20:18:04,760 :: Application startup complete.
+INFO :: root :: 2022-01-24 20:18:53,966 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 20:18:53,997 :: Database Connection is Established
+INFO :: root :: 2022-01-24 20:18:54,011 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 20:18:54,030 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 20:18:54,038 :: Started server process [2412]
+INFO :: uvicorn.error :: 2022-01-24 20:18:54,039 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 20:18:54,039 :: Application startup complete.
+INFO :: root :: 2022-01-24 20:22:02,607 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 20:22:02,607 :: Added User Id is : [{'user_id': 3}]
+ERROR :: root :: 2022-01-24 20:22:04,169 :: Error: 2 validation errors for MessageSchema
+body
+  str type expected (type=type_error.str)
+body
+  value is not a valid list (type=type_error.list)
+INFO :: root :: 2022-01-24 20:34:54,105 :: Trying to establish the database connection
+ERROR :: root :: 2022-01-24 20:35:16,358 :: Connection not Established
+INFO :: root :: 2022-01-24 22:09:32,843 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:09:35,677 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:09:35,744 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:09:35,790 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:09:35,886 :: Started server process [3708]
+INFO :: uvicorn.error :: 2022-01-24 22:09:35,887 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:09:35,896 :: Application startup complete.
+ERROR :: root :: 2022-01-24 22:09:36,049 :: Error: 1146 (42S02): Table 'book_store.user_details' doesn't exist
+INFO :: root :: 2022-01-24 22:13:13,024 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:13:13,060 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:13:13,073 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:13:13,100 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:13:13,114 :: Started server process [776]
+INFO :: uvicorn.error :: 2022-01-24 22:13:13,117 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:13:13,126 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:29:53,417 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:29:58,065 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:30:01,187 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:30:01,207 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:30:01,216 :: Started server process [2516]
+INFO :: uvicorn.error :: 2022-01-24 22:30:01,216 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:30:01,217 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:32:16,736 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:32:16,777 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:32:16,788 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:32:16,808 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:32:16,819 :: Started server process [7556]
+INFO :: uvicorn.error :: 2022-01-24 22:32:16,819 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:32:16,820 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:32:47,618 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:32:47,650 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:32:47,659 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:32:47,677 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:32:47,687 :: Started server process [676]
+INFO :: uvicorn.error :: 2022-01-24 22:32:47,688 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:32:47,689 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:33:48,282 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:33:48,323 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:33:48,335 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:33:48,361 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:33:48,374 :: Started server process [5044]
+INFO :: uvicorn.error :: 2022-01-24 22:33:48,375 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:33:48,375 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:34:14,662 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:34:14,693 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:34:14,705 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:34:14,724 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:34:14,734 :: Started server process [7108]
+INFO :: uvicorn.error :: 2022-01-24 22:34:14,734 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:34:14,734 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:38:48,237 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:38:48,273 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:38:48,286 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:38:48,311 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:38:48,322 :: Started server process [8948]
+INFO :: uvicorn.error :: 2022-01-24 22:38:48,322 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:38:48,323 :: Application startup complete.
+ERROR :: root :: 2022-01-24 22:40:46,578 :: Error: 1146 (42S02): Table 'book_store.user_details' doesn't exist
+INFO :: root :: 2022-01-24 22:41:20,801 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 22:41:20,802 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 22:41:20,902 :: Error: 1 validation error for MessageSchema
+recipients
+  value is not a valid list (type=type_error.list)
+INFO :: root :: 2022-01-24 22:43:03,962 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:43:04,306 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:43:04,570 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:43:04,617 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:43:04,642 :: Started server process [4668]
+INFO :: uvicorn.error :: 2022-01-24 22:43:04,644 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:43:04,645 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:43:51,989 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 22:43:51,989 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 22:43:51,990 :: Error: 1 validation error for MessageSchema
+recipients
+  value is not a valid list (type=type_error.list)
+INFO :: root :: 2022-01-24 22:46:08,581 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:46:08,620 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:46:08,818 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:46:08,858 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:46:08,872 :: Started server process [7392]
+INFO :: uvicorn.error :: 2022-01-24 22:46:08,873 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:46:08,874 :: Application startup complete.
+ERROR :: root :: 2022-01-24 22:51:46,045 :: Error: 2013 (HY000): Lost connection to MySQL server during query
+INFO :: uvicorn.error :: 2022-01-24 22:52:19,627 :: Shutting down
+INFO :: uvicorn.error :: 2022-01-24 22:52:19,729 :: Waiting for application shutdown.
+INFO :: uvicorn.error :: 2022-01-24 22:52:19,729 :: Application shutdown complete.
+INFO :: uvicorn.error :: 2022-01-24 22:52:19,730 :: Finished server process [7392]
+INFO :: root :: 2022-01-24 22:52:34,822 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:52:35,005 :: Database Connection is Established
+INFO :: root :: 2022-01-24 22:52:35,101 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 22:52:35,140 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 22:52:35,150 :: Started server process [7152]
+INFO :: uvicorn.error :: 2022-01-24 22:52:35,150 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 22:52:35,151 :: Application startup complete.
+INFO :: root :: 2022-01-24 22:52:52,247 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 22:52:52,247 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 22:52:53,809 :: Error: 1 validation error for MessageSchema
+recipients
+  value is not a valid list (type=type_error.list)
+INFO :: root :: 2022-01-24 23:06:18,664 :: Trying to establish the database connection
+ERROR :: root :: 2022-01-24 23:06:40,467 :: Connection not Established
+INFO :: root :: 2022-01-24 23:09:19,981 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:09:22,560 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:09:22,635 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:09:22,661 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:09:22,687 :: Started server process [2460]
+INFO :: uvicorn.error :: 2022-01-24 23:09:22,688 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:09:22,720 :: Application startup complete.
+ERROR :: root :: 2022-01-24 23:09:36,638 :: Error: 1062 (23000): Duplicate entry 'dibyeshmishra207@gmail.com' for key 'user_details.unique_email'
+INFO :: root :: 2022-01-24 23:10:03,871 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 23:10:03,871 :: Added User Id is : [{'user_id': 3}]
+ERROR :: root :: 2022-01-24 23:10:04,177 :: Error: 1 validation error for MessageSchema
+recipients
+  value is not a valid list (type=type_error.list)
+INFO :: root :: 2022-01-24 23:11:11,356 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:11:11,440 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:11:11,453 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:11:11,475 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:11:11,486 :: Started server process [1260]
+INFO :: uvicorn.error :: 2022-01-24 23:11:11,487 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:11:11,487 :: Application startup complete.
+INFO :: root :: 2022-01-24 23:11:29,674 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 23:11:29,675 :: Added User Id is : [{'user_id': 1}]
+INFO :: root :: 2022-01-24 23:13:11,139 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 23:13:11,140 :: Added User Id is : [{'user_id': 2}]
+INFO :: root :: 2022-01-24 23:25:57,810 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:26:01,418 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:26:01,568 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:26:01,596 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:26:01,688 :: Started server process [8236]
+INFO :: uvicorn.error :: 2022-01-24 23:26:01,688 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:26:01,698 :: Application startup complete.
+INFO :: root :: 2022-01-24 23:26:34,925 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:26:34,962 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:26:34,973 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:26:34,991 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:26:35,001 :: Started server process [8120]
+INFO :: uvicorn.error :: 2022-01-24 23:26:35,002 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:26:35,002 :: Application startup complete.
+INFO :: root :: 2022-01-24 23:28:38,491 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:28:38,542 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:28:38,565 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:28:38,592 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:28:38,602 :: Started server process [3992]
+INFO :: uvicorn.error :: 2022-01-24 23:28:38,603 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:28:38,604 :: Application startup complete.
+INFO :: root :: 2022-01-24 23:41:25,756 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:41:31,282 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:41:31,389 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:41:31,416 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:41:31,475 :: Started server process [2228]
+INFO :: uvicorn.error :: 2022-01-24 23:41:31,476 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:41:31,486 :: Application startup complete.
+INFO :: root :: 2022-01-24 23:41:48,835 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 23:41:48,836 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 23:42:40,448 :: Error: User already verified
+ERROR :: root :: 2022-01-24 23:48:16,782 :: Error: 2013 (HY000): Lost connection to MySQL server during query
+INFO :: uvicorn.error :: 2022-01-24 23:48:25,875 :: Shutting down
+INFO :: uvicorn.error :: 2022-01-24 23:48:25,977 :: Waiting for application shutdown.
+INFO :: uvicorn.error :: 2022-01-24 23:48:25,978 :: Application shutdown complete.
+INFO :: uvicorn.error :: 2022-01-24 23:48:25,978 :: Finished server process [2228]
+INFO :: root :: 2022-01-24 23:48:38,259 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:48:38,409 :: Database Connection is Established
+INFO :: root :: 2022-01-24 23:48:38,460 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 23:48:38,487 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 23:48:38,501 :: Started server process [7584]
+INFO :: uvicorn.error :: 2022-01-24 23:48:38,502 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 23:48:38,503 :: Application startup complete.
+INFO :: root :: 2022-01-24 23:48:43,373 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 23:48:43,374 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 23:49:32,324 :: Error: User already verified
+INFO :: root :: 2022-01-25 00:24:03,190 :: Trying to establish the database connection
+ERROR :: root :: 2022-01-25 00:24:47,470 :: Connection not Established
+INFO :: root :: 2022-01-25 00:31:25,148 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:31:27,382 :: Database Connection is Established
+INFO :: root :: 2022-01-25 00:31:27,461 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:31:27,484 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-25 00:31:27,558 :: Started server process [8912]
+INFO :: uvicorn.error :: 2022-01-25 00:31:27,558 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-25 00:31:27,568 :: Application startup complete.
+INFO :: root :: 2022-01-25 00:32:13,875 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-25 00:32:13,875 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-25 00:33:15,886 :: Error: type object 'JwtHandler' has no attribute 'decode_token'
+INFO :: root :: 2022-01-25 00:37:07,460 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:37:08,525 :: Database Connection is Established
+INFO :: root :: 2022-01-25 00:37:08,872 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:37:08,899 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-25 00:37:08,913 :: Started server process [5068]
+INFO :: uvicorn.error :: 2022-01-25 00:37:08,914 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-25 00:37:08,915 :: Application startup complete.
+ERROR :: root :: 2022-01-25 00:38:01,026 :: Error: Token has expired please generate new token
+ERROR :: root :: 2022-01-25 00:38:01,027 :: Error: %d format: a number is required, not dict
+INFO :: root :: 2022-01-25 00:39:58,414 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:39:58,632 :: Database Connection is Established
+INFO :: root :: 2022-01-25 00:39:58,701 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:39:58,726 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-25 00:39:58,738 :: Started server process [1872]
+INFO :: uvicorn.error :: 2022-01-25 00:39:58,738 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-25 00:39:58,739 :: Application startup complete.
+INFO :: root :: 2022-01-25 00:40:08,113 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-25 00:40:08,114 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-25 00:41:16,613 :: Error: Token has expired please generate new token
+ERROR :: root :: 2022-01-25 00:41:16,614 :: Error: %d format: a number is required, not dict
+INFO :: root :: 2022-01-25 00:51:35,124 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:51:37,104 :: Database Connection is Established
+INFO :: root :: 2022-01-25 00:51:37,224 :: Trying to establish the database connection
+INFO :: root :: 2022-01-25 00:51:37,252 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-25 00:51:37,265 :: Started server process [7632]
+INFO :: uvicorn.error :: 2022-01-25 00:51:37,266 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-25 00:51:37,267 :: Application startup complete.
+INFO :: root :: 2022-01-25 00:51:57,194 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-25 00:51:57,194 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-25 00:52:27,727 :: Error: User already verified
+INFO :: uvicorn.error :: 2022-01-25 00:53:40,680 :: Shutting down
+INFO :: uvicorn.error :: 2022-01-25 00:53:40,781 :: Waiting for application shutdown.
+INFO :: uvicorn.error :: 2022-01-25 00:53:40,782 :: Application shutdown complete.
+INFO :: uvicorn.error :: 2022-01-25 00:53:40,783 :: Finished server process [7632]
