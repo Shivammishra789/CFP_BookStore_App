@@ -74,14 +74,6 @@ class UserOperation:
         query = "update user_details set is_verified = true where user_id = %d" % user_id
         self.cursor.execute(query)
         self.connection.commit()
-        query = "select is_verified from user_details where user_id = %d" % user_id
-        self.cursor.execute(query)
-        verified = [i for i in self.cursor]
-        verified = verified[0]["is_verified"]
-        if verified == 0:
-            return user_id
-        else:
-            raise Exception("User already verified")
 
     def delete_user(self, user_id):
         """
