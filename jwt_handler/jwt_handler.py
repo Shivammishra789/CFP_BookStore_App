@@ -24,8 +24,8 @@ class JwtHandler:
     def decode_token(token_id):
         """
             desc: this function will decode the token into a payload
-            param: token_id: it is a token which is generated at the time of adding an employee
-            return: decoded employee id
+            param: token_id: it is a token which is generated at the time of adding an user
+            return: decoded user id
         """
         payload = jwt.decode(token_id, "users@678$registered9090", algorithms=["HS256"])
         return payload.get('user_id')
