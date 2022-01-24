@@ -371,3 +371,143 @@ INFO :: root :: 2022-01-21 02:31:12,166 :: Database Connection is Established
 INFO :: uvicorn.error :: 2022-01-21 02:31:12,172 :: Started server process [9628]
 INFO :: uvicorn.error :: 2022-01-21 02:31:12,172 :: Waiting for application startup.
 INFO :: uvicorn.error :: 2022-01-21 02:31:12,173 :: Application startup complete.
+INFO :: root :: 2022-01-24 00:14:04,889 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 00:14:08,268 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 00:14:08,344 :: Started server process [7452]
+INFO :: uvicorn.error :: 2022-01-24 00:14:08,345 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 00:14:08,410 :: Application startup complete.
+INFO :: root :: 2022-01-24 00:16:18,476 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 00:16:18,476 :: Added User Id is : [{'user_id': 9}]
+ERROR :: root :: 2022-01-24 00:16:18,476 :: Error: Object of type timedelta is not JSON serializable
+INFO :: root :: 2022-01-24 00:34:00,724 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 00:34:01,294 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 00:34:01,304 :: Started server process [7016]
+INFO :: uvicorn.error :: 2022-01-24 00:34:01,305 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 00:34:01,306 :: Application startup complete.
+INFO :: root :: 2022-01-24 00:35:10,680 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 00:35:10,680 :: Added User Id is : [{'user_id': 10}]
+ERROR :: root :: 2022-01-24 00:35:10,680 :: Error: Object of type timedelta is not JSON serializable
+INFO :: root :: 2022-01-24 00:36:03,873 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 00:36:03,912 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 00:36:03,918 :: Started server process [6340]
+INFO :: uvicorn.error :: 2022-01-24 00:36:03,919 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 00:36:03,919 :: Application startup complete.
+INFO :: root :: 2022-01-24 00:41:08,708 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 00:41:09,071 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 00:41:09,077 :: Started server process [8176]
+INFO :: uvicorn.error :: 2022-01-24 00:41:09,078 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 00:41:09,078 :: Application startup complete.
+INFO :: root :: 2022-01-24 00:41:48,410 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 00:41:48,410 :: Added User Id is : [{'user_id': 10}, {'user_id': 11}]
+ERROR :: root :: 2022-01-24 00:41:48,411 :: Error: Object of type timedelta is not JSON serializable
+INFO :: root :: 2022-01-24 00:47:36,960 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 00:47:37,816 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 00:47:37,826 :: Started server process [4864]
+INFO :: uvicorn.error :: 2022-01-24 00:47:37,827 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 00:47:37,828 :: Application startup complete.
+INFO :: root :: 2022-01-24 00:47:58,073 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 00:47:58,087 :: Added User Id is : [{'user_id': 10}, {'user_id': 11}, {'user_id': 12}]
+ERROR :: root :: 2022-01-24 00:47:58,088 :: Error: Object of type timedelta is not JSON serializable
+INFO :: root :: 2022-01-24 00:48:17,452 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 00:48:17,452 :: Added User Id is : [{'user_id': 13}]
+ERROR :: root :: 2022-01-24 00:48:17,453 :: Error: Object of type timedelta is not JSON serializable
+INFO :: root :: 2022-01-24 01:07:55,944 :: Trying to establish the database connection
+ERROR :: root :: 2022-01-24 01:08:27,889 :: Connection not Established
+INFO :: root :: 2022-01-24 01:10:26,318 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:10:30,529 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:10:30,589 :: Started server process [2296]
+INFO :: uvicorn.error :: 2022-01-24 01:10:30,590 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:10:30,666 :: Application startup complete.
+ERROR :: root :: 2022-01-24 01:12:25,886 :: Error: 1146 (42S02): Table 'book_store.user_details' doesn't exist
+INFO :: root :: 2022-01-24 01:13:17,054 :: Successfully Added User Details
+DEBUG :: root :: 2022-01-24 01:13:17,055 :: Added User Id is : [{'user_id': 1}]
+ERROR :: root :: 2022-01-24 01:13:17,055 :: Error: Object of type timedelta is not JSON serializable
+INFO :: root :: 2022-01-24 01:16:21,257 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:16:23,318 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:16:23,356 :: Started server process [5516]
+INFO :: uvicorn.error :: 2022-01-24 01:16:23,357 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:16:23,367 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:23:28,294 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:23:29,169 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:23:29,175 :: Started server process [5196]
+INFO :: uvicorn.error :: 2022-01-24 01:23:29,176 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:23:29,176 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:25:30,935 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:25:30,977 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:25:30,983 :: Started server process [3836]
+INFO :: uvicorn.error :: 2022-01-24 01:25:30,984 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:25:30,985 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:28:55,871 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:28:55,911 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:28:55,918 :: Started server process [1844]
+INFO :: uvicorn.error :: 2022-01-24 01:28:55,918 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:28:55,919 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:32:42,249 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:32:42,293 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:32:42,302 :: Started server process [7808]
+INFO :: uvicorn.error :: 2022-01-24 01:32:42,303 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:32:42,306 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:36:58,282 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:36:58,318 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:36:58,324 :: Started server process [4948]
+INFO :: uvicorn.error :: 2022-01-24 01:36:58,324 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:36:58,325 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:38:12,058 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:38:12,096 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:38:12,102 :: Started server process [6432]
+INFO :: uvicorn.error :: 2022-01-24 01:38:12,103 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:38:12,104 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:38:20,744 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:38:20,782 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:38:20,790 :: Started server process [6428]
+INFO :: uvicorn.error :: 2022-01-24 01:38:20,791 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:38:20,791 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:38:33,713 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:38:33,760 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:38:33,769 :: Started server process [4920]
+INFO :: uvicorn.error :: 2022-01-24 01:38:33,770 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:38:33,771 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:40:49,997 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:40:50,035 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:40:50,043 :: Started server process [196]
+INFO :: uvicorn.error :: 2022-01-24 01:40:50,043 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:40:50,044 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:44:08,018 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:44:08,059 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:44:08,068 :: Started server process [3340]
+INFO :: uvicorn.error :: 2022-01-24 01:44:08,069 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:44:08,069 :: Application startup complete.
+INFO :: root :: 2022-01-24 01:44:58,885 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 01:44:58,927 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 01:44:58,934 :: Started server process [7736]
+INFO :: uvicorn.error :: 2022-01-24 01:44:58,935 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 01:44:58,935 :: Application startup complete.
+INFO :: uvicorn.error :: 2022-01-24 01:51:17,970 :: Shutting down
+INFO :: root :: 2022-01-24 02:02:03,351 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 02:02:03,872 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 02:02:03,883 :: Started server process [7952]
+INFO :: uvicorn.error :: 2022-01-24 02:02:03,884 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 02:02:03,884 :: Application startup complete.
+INFO :: root :: 2022-01-24 02:03:53,860 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 02:03:53,895 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 02:03:53,905 :: Started server process [7148]
+INFO :: uvicorn.error :: 2022-01-24 02:03:53,906 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 02:03:53,907 :: Application startup complete.
+INFO :: root :: 2022-01-24 02:04:08,762 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 02:04:08,804 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 02:04:08,822 :: Started server process [4720]
+INFO :: uvicorn.error :: 2022-01-24 02:04:08,927 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 02:04:08,930 :: Application startup complete.
+ERROR :: root :: 2022-01-24 02:06:51,315 :: error caught :'UserOperation' object has no attribute 'add_book_to_db'
+INFO :: root :: 2022-01-24 02:09:19,937 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 02:09:19,988 :: Database Connection is Established
+INFO :: root :: 2022-01-24 02:09:19,989 :: Trying to establish the database connection
+INFO :: root :: 2022-01-24 02:09:20,009 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-01-24 02:09:20,018 :: Started server process [4960]
+INFO :: uvicorn.error :: 2022-01-24 02:09:20,018 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-01-24 02:09:20,019 :: Application startup complete.
+INFO :: root :: 2022-01-24 02:09:33,075 :: Successfully added one book Details
+INFO :: uvicorn.error :: 2022-01-24 07:53:53,913 :: Shutting down
+INFO :: uvicorn.error :: 2022-01-24 07:53:54,015 :: Waiting for application shutdown.
+INFO :: uvicorn.error :: 2022-01-24 07:53:54,016 :: Application shutdown complete.
+INFO :: uvicorn.error :: 2022-01-24 07:53:54,017 :: Finished server process [4960]

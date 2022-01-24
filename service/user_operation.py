@@ -3,7 +3,7 @@
 @date: 20-01-22 6:23 PM
 @desc: Contains different methods to add, delete, update user in database
 '''
-from database_connection import DBConnection
+from core.database_connection import DBConnection
 
 
 class UserOperation:
@@ -72,6 +72,7 @@ class UserOperation:
             param: id
             return: deleted user id
         """
+        query = "select user_id from user_details where user_id = %d" % user_id
         query = "delete from user_details where user_id = %d" % user_id
         self.cursor.execute(query)
         self.connection.commit()
