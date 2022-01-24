@@ -4,15 +4,12 @@
 @desc: establish connection with database
 '''
 
-import logging
+from logger import logging
 from mysql.connector import connect, Error
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
-logging.basicConfig(filename='book_store.log', filemode='a', level=logging.DEBUG,
-                    format='%(levelname)s :: %(name)s :: %(asctime)s :: %(message)s')
 
 
 class DBConnection:
