@@ -2,7 +2,10 @@
 @author: Shivam Mishra
 @date: 23-01-22 1:27 PM
 '''
+
+from io import StringIO
 from core.database_connection import DBConnection
+import pandas as pd
 
 
 class BooksOperation:
@@ -76,3 +79,15 @@ class BooksOperation:
         query = "delete from books where id = %d" % book_id
         self.cursor.execute(query)
         self.connection.commit()
+
+    def insert_to_database(self, csv_file):
+        """
+        desc: to read csv and upload it to database
+        param: csv_file: path of csv file
+        """
+        books_dataframe = pd.read_csv(StringIO(str(csv_file.file.read(), 'utf-8')), encoding='utf-8')
+        cols = ", ".join([str(i) for i in books_dataframe.columns.tolist()])
+        for i, row in books_dataframe.iterrows():
+            sql = "INSERT INTO books (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+            self.cursor.execute(sql, tuple(row))
+            self.connection.commit()
