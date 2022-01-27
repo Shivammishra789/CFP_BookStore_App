@@ -4,7 +4,7 @@
 @desc: establish connection with database
 '''
 
-from logger import logging
+from logger.logger import logging
 from mysql.connector import connect, Error
 import os
 from dotenv import load_dotenv

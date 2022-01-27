@@ -4,11 +4,11 @@
 @desc: Contains all api
 '''
 
-from logger import logging
+from logger.logger import logging
 from fastapi import APIRouter, Header
 from jwt_handler.jwt_handler import JwtHandler
-from model.user_model import UserDetails
-from send_email import send_email_async
+from model.model import UserDetails
+from service.send_email import send_email_async
 from service.user_operation import UserOperation
 
 route = APIRouter(prefix="/users", tags=["USERS"])
@@ -64,7 +64,27 @@ async def register_user(user: UserDetails):
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}
-
+#
+# from fastapi import FastAPI,Request,Header
+# from model.user_model import User
+# from verification import verify_token
+# from verify_user import verify_user
+#
+# app = FastAPI()
+#
+#
+# @app.get("/verify-token/")
+# @verify_token
+# def token_details(obj:User,token: str = Header(None)):
+#     print(obj)
+#     return "verified"
+#
+#
+# @app.get("/verify-user/")
+# @verify_user
+# def token_details(request:Request):
+#     print(request)
+#     return "verified"
 
 @route.get("/verification")
 def verify_registered_user(token_id: str):

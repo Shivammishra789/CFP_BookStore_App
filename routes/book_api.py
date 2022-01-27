@@ -1,11 +1,11 @@
 '''
 @author: Shivam Mishra
 @date: 24-01-22 11:29 AM
-
 '''
-from logger import logging
-from fastapi import APIRouter
-from model.books_model import Book
+
+from logger.logger import logging
+from fastapi import APIRouter, File, UploadFile
+from model.model import Book
 from service.book_operation import BooksOperation
 
 route = APIRouter(prefix="/books", tags=["BOOKS"])
@@ -91,3 +91,16 @@ def delete_book_by_id(book_id: int):
     except Exception as error:
         logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}
+
+
+@route.post("/upload_file")
+async def upload_csv_file(csv_file: UploadFile = File(...)):
+    try:
+        book_operation.insert_to_database(csv_file)
+        logging.info("successfully uploaded the file and inserted into database")
+        return {"status": 200, "message": "Books Added to Database Successfully"}
+    except Exception as error:
+        logging.error(f"error caught :{error}")
+        return {"status": 500, "message": f"Error : {error}"}
+
+
