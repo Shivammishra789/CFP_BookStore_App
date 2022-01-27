@@ -16,7 +16,7 @@ def show_wishlist(user_id):
     """
 
     query = '''SELECT books.author, books.title, books.price, books.image from books
-               join wishlist on wishlist.id = books.id where user_id = %d''' % user_id
+               join wishlist on wishlist.book_id = books.id where user_id = %d''' % user_id
     cursor.execute(query)
     wish_list = [i for i in cursor]
     if wish_list:

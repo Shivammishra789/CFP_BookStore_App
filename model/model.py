@@ -36,3 +36,11 @@ class Wishlist(BaseModel):
     """
     book_id: int
 
+
+class Cart(BaseModel):
+    """
+    Contains book_id
+    """
+    book_id: int
+
+

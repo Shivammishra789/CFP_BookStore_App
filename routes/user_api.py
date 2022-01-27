@@ -1,7 +1,7 @@
 '''
 @author: Shivam Mishra
 @date: 20-01-22 11:59 AM
-@desc: Contains all api
+@desc: Contains all user api
 '''
 
 from logger.logger import logging
@@ -64,39 +64,21 @@ async def register_user(user: UserDetails):
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}
-#
-# from fastapi import FastAPI,Request,Header
-# from model.user_model import User
-# from verification import verify_token
-# from verify_user import verify_user
-#
-# app = FastAPI()
-#
-#
-# @app.get("/verify-token/")
-# @verify_token
-# def token_details(obj:User,token: str = Header(None)):
-#     print(obj)
-#     return "verified"
-#
-#
-# @app.get("/verify-user/")
-# @verify_user
-# def token_details(request:Request):
-#     print(request)
-#     return "verified"
+
 
 @route.get("/verification")
 def verify_registered_user(token_id: str):
     """
     desc: method to verify registered user
     :param token_id: generated while registering user
-    :return: deleted user id in SMD format
+    :return: verified user id in SMD format
     """
     try:
         user_id = JwtHandler.decode_token(token_id)
-        verified_user_id = operation.verify_new_user(user_id)
-        return {"status": 200, "message": f"User with Id {verified_user_id} Verified  successfully"}
+        operation.verify_new_user(user_id)
+        logging.info("Successfully Verified Registered User")
+        logging.debug(f"Verified User Id is : {user_id}")
+        return {"status": 200, "message": f"User Verified successfully"}
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}
