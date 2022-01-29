@@ -44,3 +44,8 @@ class Cart(BaseModel):
     book_id: int
 
 
+class Order(BaseModel):
+    """
+    Contains address
+    """
+    address: str
