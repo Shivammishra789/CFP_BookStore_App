@@ -23,7 +23,8 @@ def show_cart(user_id):
     if cart:
         return cart
     else:
-        raise Exception("There is no result for the Cart.")
+        msg = "Cart is empty"
+        return msg
 
 
 def add_book_to_cart(book_id,user_id):

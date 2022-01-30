@@ -13,8 +13,9 @@ def place_new_order(address, user_id):
     """
         desc: place order
         param:  address, book_id
-        :return: order_id
+        :return: result_args
     """
-    query = f"CALL sp_order(%d,'%s')" % (user_id, address)
-    cursor.execute(query)
+    args = [user_id, f'{address}']
+    result_args = cursor.callproc('sp_order', args)
     connection.commit()
+    return result_args
