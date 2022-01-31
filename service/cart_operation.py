@@ -19,8 +19,10 @@ def show_cart(user_id):
     query = '''SELECT books.author, books.title, books.price, books.image, cart.quantity  from books
                join cart on cart.book_id = books.id where user_id = %d''' % user_id
     cursor.execute(query)
+
     cart = [i for i in cursor]
     if cart:
+        connection.commit()
         return cart
     else:
         msg = "Cart is empty"

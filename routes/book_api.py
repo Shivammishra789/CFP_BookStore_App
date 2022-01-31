@@ -4,7 +4,7 @@
 '''
 
 from logger.logger import logging
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter, File, UploadFile, HTTPException
 from model.model import Book
 from service.book_operation import BooksOperation
 
@@ -21,7 +21,9 @@ def get_all_books_details():
     try:
         result = book_operation.show_all_books_data()
         logging.info("Successfully retrieved all books Details ")
-        return {"status": 200, "message": "Successfully retrieved  all books Details", "data": result}
+        return {"status": 202, "message": "Successfully retrieved  all books Details", "data": result}
+    except HTTPException as error:
+        return{error}
     except Exception as error:
         logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}
@@ -38,6 +40,8 @@ def get_book_details_by_id(book_id: int):
         result = book_operation.show_single_book_data(book_id)
         logging.info("Successfully retrieved  book Details")
         return {"status": 200, "message": "Successfully retrieved  book Details", "data": result}
+    except HTTPException as exception:
+        return{exception}
     except Exception as error:
         logging.error(f"Error :{error}")
         return {"status": 500, "message": f"Error : {error}"}
@@ -53,7 +57,7 @@ def add_book(book: Book):
     try:
         result = book_operation.add_single_book(book.id, book.author, book.title, book.image, book.quantity, book.price,book.description)
         logging.info("Successfully added one book Details")
-        return {"status": 200, "message": "Successfully added The book Details","data": result}
+        return {"status": 200, "message": "Successfully added The book Details", "data": result}
     except Exception as error:
         logging.error(f"error caught :{error}")
         return {"status": 500, "message": f"Error : {error}"}
