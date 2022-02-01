@@ -12,7 +12,7 @@ route = APIRouter(prefix="/books", tags=["BOOKS"])
 book_operation = BooksOperation()
 
 
-@route.get("/all_book_details")
+@route.get("/details/all")
 def get_all_books_details():
     """
     desc: created an api to retrieve all the data in the book table
@@ -29,7 +29,7 @@ def get_all_books_details():
         return {"status": 500, "message": f"Error : {error}"}
 
 
-@route.get("/")
+@route.get("/details/book_id={book_id}")
 def get_book_details_by_id(book_id: int):
     """
     desc: created an api to retrieve all the data of about a book
