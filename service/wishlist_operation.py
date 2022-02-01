@@ -22,7 +22,7 @@ def show_wishlist(user_id):
     if wish_list:
         return wish_list
     else:
-        raise Exception("There is no result for the Wishlist.")
+        raise Exception("Wishlist is empty")
 
 
 def add_book_to_wishlist(book_id,user_id):
@@ -30,10 +30,17 @@ def add_book_to_wishlist(book_id,user_id):
         desc: adding book to wishlist
         param:  user_id, book_id
     """
-    query = f"INSERT INTO wishlist (user_id,book_id) values (%d,%d)" %(user_id,book_id)
+    query = '''SELECT book_id from wishlist where user_id = %d''' % (book_id,user_id)
     cursor.execute(query)
-    connection.commit()
-    return book_id
+    data_list = [i for i in cursor]
+    if data_list:
+        query = f"INSERT INTO wishlist (user_id,book_id) values (%d,%d)" % (user_id, book_id)
+        cursor.execute(query)
+        connection.commit()
+        return book_id
+    else:
+        raise Exception("book id not found in database")
+
 
 
 def delete_book_from_wishlist(book_id,user_id):
@@ -41,7 +48,14 @@ def delete_book_from_wishlist(book_id,user_id):
         desc: deleting book from wishlist
         param:  user_id, book_id
     """
-    query = f"DELETE FROM wishlist WHERE user_id = %d AND book_id = %d" %(user_id,book_id)
+    query = '''SELECT book_id from wishlist where user_id = %d''' % user_id
     cursor.execute(query)
-    connection.commit()
-    return book_id
+    data_list = [i for i in cursor]
+    if data_list:
+        query = f"DELETE FROM wishlist WHERE user_id = %d AND book_id = %d" %(user_id,book_id)
+        cursor.execute(query)
+        connection.commit()
+        return book_id
+    else:
+        raise Exception("book id already deleted ")
+
