@@ -11,23 +11,26 @@ client = TestClient(app)
 
 
 class TestForUserApi:
+    """
+    Contains test cases for user api
+    """
 
     def test_all_user_details_are_retrieved(self):
-        response = client.get("/users/all/")
+        response = client.get("/users/details/all")
         assert response.status_code == 200
         assert response.json()["message"] == "User Details fetched successfully"
 
-    @pytest.mark.parametrize('user_id', [3])
+    @pytest.mark.parametrize('user_id', [4])
     def test_single_user_details_is_retrieved(self, user_id):
-        response = client.get(f"/users/?user_id={user_id}")
+        response = client.get(f"/users/details/user_id={user_id}")
         assert response.status_code == 200
         assert response.json()["message"] == "User Details fetched successfully"
 
     @pytest.mark.parametrize('user_id', [12])
     def test_for_user_details_is_not_present(self, user_id):
-        response = client.get(f"/users/?user_id={user_id}")
+        response = client.get(f"/users/details/user_id={user_id}")
         assert response.status_code == 200
-        assert response.json()["message"] != "Successfully retrieved  user Details"
+        assert response.json()["message"] == "('User Details cannot be fetched', 'error: id not found')"
 
     @pytest.mark.parametrize('user_data', [
         { 'email_id': 'shivammishra7789@gmail.com','password': '123', 'full_name': 'Shivam', 'mobile_no': '9874589765'}])

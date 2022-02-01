@@ -15,7 +15,7 @@ route = APIRouter(prefix="/users", tags=["USERS"])
 operation = UserOperation()
 
 
-@route.get("/all")
+@route.get("/details/all")
 def retrieve_all_user_details():
     """
         desc: get method to retrieve all user details
@@ -31,7 +31,7 @@ def retrieve_all_user_details():
         return {"status": 500, "message": f"Error : {error}"}
 
 
-@route.get("/")
+@route.get("/details/user_id={user_id}")
 def single_user_data(user_id):
     """
         desc: get method to retrieve single user detail

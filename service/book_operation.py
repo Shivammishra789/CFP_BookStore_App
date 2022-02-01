@@ -78,12 +78,20 @@ class BooksOperation:
         try:
             connection = DBConnection().establish_connection()
             cursor = connection.cursor(dictionary=True)
-            query = '''update books set id = %d, author = '%s', title='%s', image='%s',quantity=%d, price = %f,
-                       description = '%s' where id = %d''' % (id, author, title, image, quantity, price, description, book_id)
+            query = "select id from books where id = %d" % book_id
             cursor.execute(query)
-            connection.commit()
-            updated_data = self.show_single_book_data(id)
-            return updated_data
+            data_list = [i for i in cursor]
+            if data_list:
+                query = '''update books set id = %d, author = '%s', title='%s', image='%s',quantity=%d, price = %f,
+                                       description = '%s' where id = %d''' % (
+                id, author, title, image, quantity, price, description, book_id)
+                cursor.execute(query)
+                connection.commit()
+                updated_data = self.show_single_book_data(id)
+                return updated_data
+            else:
+                raise HTTPException(status_code=404, detail="this book id is not present in the database")
+
         finally:
             connection.close()
 
@@ -95,9 +103,14 @@ class BooksOperation:
         try:
             connection = DBConnection().establish_connection()
             cursor = connection.cursor(dictionary=True)
-            query = "delete from books where id = %d" % book_id
-            cursor.execute(query)
-            connection.commit()
+            cursor.execute(f'select id from books where id={book_id}')
+            user_detail = [i for i in cursor]
+            if not user_detail:
+                raise Exception("Entered book id not found")
+            else:
+                query = "delete from books where id = %d" % book_id
+                cursor.execute(query)
+                connection.commit()
         finally:
             connection.close()
 
