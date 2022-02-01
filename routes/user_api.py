@@ -15,7 +15,7 @@ route = APIRouter(prefix="/users", tags=["USERS"])
 operation = UserOperation()
 
 
-@route.get("/all_user_details")
+@route.get("/all")
 def retrieve_all_user_details():
     """
         desc: get method to retrieve all user details
@@ -84,7 +84,7 @@ def verify_registered_user(token_id: str):
         return {"status": 500, "message": f"Error : {error}"}
 
 
-@route.post("/login")
+@route.post("/login/")
 def existing_user_login(email_id: str, password: str):
     """
         desc: post method to verify existing user
@@ -102,19 +102,20 @@ def existing_user_login(email_id: str, password: str):
         return {"status": 500, "message": f"Error : {error}"}
 
 
-@route.delete("/")
-def delete_user(id:int):
+@route.delete("/delete_user/user_id={user_id}")
+def delete_user(user_id:int):
     """
         desc: delete method to delete user details
         param: id
         return: deleted user id in SMD format
     """
     try:
-        operation.delete_user(id)
+
+        operation.delete_user(user_id)
         logging.info("Successfully Deleted The User Details")
-        logging.debug(f"Deleted Employee ID is : {id}")
+        logging.debug(f"Deleted Employee ID is : {user_id}")
         return {"status": 200, "message": "Successfully Deleted The User Details",
-                "data": f"Deleted user Id is {id}"}
+                "data": f"Deleted user Id is {user_id}"}
     except Exception as error:
         logging.error(f"Error: {error}")
         return {"status": 500, "message": f"Error : {error}"}

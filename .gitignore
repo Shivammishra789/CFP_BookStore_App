@@ -3,3 +3,5 @@ venv
 .idea
 __pycache__
 book_store.log
+pytest.ini
+.pytest_cache

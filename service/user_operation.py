@@ -80,9 +80,14 @@ class UserOperation:
             desc: delete user from database
             param: user id
         """
-        query = "delete from user_details where user_id = %d" % user_id
-        self.cursor.execute(query)
-        self.connection.commit()
+        self.cursor.execute(f'select user_id from user_details where user_id={user_id}')
+        user_detail = [i for i in self.cursor]
+        if not user_detail:
+            raise Exception("id not found")
+        else:
+            query = "delete from user_details where user_id = %d" % user_id
+            self.cursor.execute(query)
+            self.connection.commit()
 
     def update_user_detail(self, user_id, update_param, update):
         """
