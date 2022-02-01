@@ -6,7 +6,7 @@
 import os
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from dotenv import load_dotenv
-load_dotenv('.env')
+load_dotenv()
 
 conf = ConnectionConfig(
     MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
