@@ -58,7 +58,7 @@ class TestForWishlistApi:
 
     @pytest.mark.parametrize('wishlist_data', [
         {"book_id": 8}])
-    def test_if_delete_not_done_from_wishlist(self, wishlist_data):
+    def test_for_book_id_already_deleted_wishlist(self, wishlist_data):
         response = client.delete("/wishlist/", headers={
             "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9"
                      ".eyJ1c2VyX2lkIjpbeyJ1c2VyX2lkIjo0fV0sImV4cGlyZXMiOjE2NDM4MDQyNTQuNTM2NDUzfQ"
