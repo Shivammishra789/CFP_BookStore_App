@@ -8948,3 +8948,71 @@ INFO :: uvicorn.error :: 2022-02-02 07:41:03,466 :: Shutting down
 INFO :: uvicorn.error :: 2022-02-02 07:41:03,575 :: Waiting for application shutdown.
 INFO :: uvicorn.error :: 2022-02-02 07:41:03,575 :: Application shutdown complete.
 INFO :: uvicorn.error :: 2022-02-02 07:41:03,575 :: Finished server process [3848]
+INFO :: root :: 2022-02-02 07:48:59,111 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:49:01,377 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:49:16,783 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:49:16,814 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:49:16,861 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:49:16,908 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:49:16,908 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:49:16,924 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-02-02 07:49:16,970 :: Started server process [6328]
+INFO :: uvicorn.error :: 2022-02-02 07:49:16,970 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-02-02 07:49:16,970 :: Application startup complete.
+INFO :: root :: 2022-02-02 07:49:24,056 :: Successfully Get All Books From cart
+DEBUG :: root :: 2022-02-02 07:49:24,056 :: User Cart details are : Cart is empty
+INFO :: root :: 2022-02-02 07:49:42,012 :: Successfully Added Book to Cart
+DEBUG :: root :: 2022-02-02 07:49:42,012 :: Added book id  is : 1
+INFO :: root :: 2022-02-02 07:49:54,284 :: Successfully Get All Books From cart
+DEBUG :: root :: 2022-02-02 07:49:54,284 :: User Cart details are : [{'author': 'Chetan Bhagat', 'title': 'The Girl in Room 105', 'price': 193.0, 'image': 'http://books.google.com/books/content?id=GHt_uwEACAAJ&printsec=frontcover&img=1&zoom=5', 'quantity': 1}]
+INFO :: root :: 2022-02-02 07:51:05,335 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:51:05,366 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:51:06,288 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:51:06,335 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:51:06,350 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:51:06,382 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:51:06,382 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:51:06,413 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-02-02 07:51:06,429 :: Started server process [4832]
+INFO :: uvicorn.error :: 2022-02-02 07:51:06,429 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-02-02 07:51:06,429 :: Application startup complete.
+INFO :: root :: 2022-02-02 07:52:01,679 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:01,710 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:52:02,605 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:02,631 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:52:02,640 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:02,666 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:52:02,673 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:02,685 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-02-02 07:52:02,701 :: Started server process [5200]
+INFO :: uvicorn.error :: 2022-02-02 07:52:02,701 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-02-02 07:52:02,701 :: Application startup complete.
+INFO :: root :: 2022-02-02 07:52:05,959 :: Successfully Get All Books From cart
+DEBUG :: root :: 2022-02-02 07:52:05,959 :: User Cart details are : Cart is empty
+INFO :: root :: 2022-02-02 07:52:41,093 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:41,140 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:52:42,093 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:42,118 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:52:42,126 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:42,144 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:52:42,152 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:52:42,174 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-02-02 07:52:42,190 :: Started server process [2156]
+INFO :: uvicorn.error :: 2022-02-02 07:52:42,190 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-02-02 07:52:42,191 :: Application startup complete.
+INFO :: root :: 2022-02-02 07:52:57,262 :: Successfully Added Book to Cart
+DEBUG :: root :: 2022-02-02 07:52:57,262 :: Added book id  is : 2
+INFO :: root :: 2022-02-02 07:53:07,084 :: Successfully Get All Books From cart
+DEBUG :: root :: 2022-02-02 07:53:07,084 :: User Cart details are : [{'author': 'Rujuta Divekar', 'title': 'Indian Superfoods', 'price': 495.0, 'image': 'http://books.google.com/books/content?id=4oFoDwAAQBAJ&printsec=frontcover&img=1&zoom=5', 'quantity': 1}]
+INFO :: root :: 2022-02-02 07:54:47,798 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:54:47,845 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:54:48,892 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:54:48,923 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:54:48,939 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:54:48,954 :: Database Connection is Established
+INFO :: root :: 2022-02-02 07:54:48,954 :: Trying to establish the database connection
+INFO :: root :: 2022-02-02 07:54:48,986 :: Database Connection is Established
+INFO :: uvicorn.error :: 2022-02-02 07:54:49,001 :: Started server process [3040]
+INFO :: uvicorn.error :: 2022-02-02 07:54:49,001 :: Waiting for application startup.
+INFO :: uvicorn.error :: 2022-02-02 07:54:49,001 :: Application startup complete.
+INFO :: uvicorn.error :: 2022-02-02 07:55:07,189 :: Shutting down
