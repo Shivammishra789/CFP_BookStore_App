@@ -10,7 +10,7 @@ from fastapi.testclient import TestClient
 client = TestClient(app)
 
 
-class TestForUserApi:
+class TestUserApi:
     """
     Contains test cases for user api
     """
