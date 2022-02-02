@@ -47,10 +47,15 @@ def delete_book_from_cart(book_id,user_id):
         param:  user_id, book_id
         :return: book_id
     """
-    query = f"DELETE FROM cart WHERE user_id = %d AND book_id = %d" %(user_id,book_id)
-    cursor.execute(query)
-    connection.commit()
-    return book_id
+    cursor.execute(f'select user_id from cart where user_id={user_id}')
+    user_detail = [i for i in cursor]
+    if not user_detail:
+        raise Exception("id not found")
+    else:
+        query = f"DELETE FROM cart WHERE user_id = %d AND book_id = %d" %(user_id,book_id)
+        cursor.execute(query)
+        connection.commit()
+        return book_id
 
 
 def update_quantity_of_book_in_cart(book_id, user_id, quantity):
@@ -59,8 +64,13 @@ def update_quantity_of_book_in_cart(book_id, user_id, quantity):
         param:  user_id, book_id
         :return: quantity
     """
-    query = f"UPDATE cart SET quantity = %d WHERE book_id = %d AND user_id = %d" %(quantity,book_id,user_id)
-    cursor.execute(query)
-    connection.commit()
-    return quantity
+    cursor.execute(f'select user_id from cart where user_id={user_id}')
+    user_detail = [i for i in cursor]
+    if not user_detail:
+        raise Exception("id not found")
+    else:
+        query = f"UPDATE cart SET quantity = %d WHERE book_id = %d AND user_id = %d" %(quantity,book_id,user_id)
+        cursor.execute(query)
+        connection.commit()
+        return quantity
 
