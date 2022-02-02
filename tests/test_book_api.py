@@ -9,7 +9,7 @@ from fastapi.testclient import TestClient
 client = TestClient(app)
 
 
-class TestForBookApi:
+class TestBookApi:
     """
     Contains test cases for books api
     """
